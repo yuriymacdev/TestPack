@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "TestPack",
+    platforms: [
+        .iOS(.v9)
+    ],
     products: [
         .library(
             name: "TestPack",
@@ -14,6 +17,9 @@ let package = Package(
     targets: [
         .target(
             name: "TestPack",
-            dependencies: [])
+            dependencies: [],
+            path: "Sources/TestPack",
+            publicHeadersPath: "TP"
+        )
     ]
 )
