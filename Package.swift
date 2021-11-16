@@ -18,8 +18,8 @@ let package = Package(
         .target(
             name: "TestPack",
             dependencies: [],
-            path: "Sources/TestPack",
-            publicHeadersPath: "TP"
+            path: "Sources",
+            publicHeadersPath: "TestPack"
         )
     ]
 )
